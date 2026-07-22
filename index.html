@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Space Shooter - A fun arcade-style game where you control a spaceship to defeat enemies. Use arrow keys or touch controls on mobile.">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Space Shooter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="game-shell">
-    <h1>🚀 Space Shooter</h1>
-    <p class="instructions">Move left/right with arrow keys or tap controls. Shoot with Space or the fire button. Tap the canvas after Game Over to restart.</p>
+  <main class="game-shell" role="main">
+    <header>
+      <h1>🚀 Space Shooter</h1>
+      <p class="instructions">Move left/right with arrow keys or tap controls. Shoot with Space or the fire button. Tap the canvas after Game Over to restart.</p>
+    </header>
 
-    <div class="canvas-wrapper">
-      <canvas id="gameCanvas" width="480" height="600"></canvas>
-    </div>
+    <section class="canvas-wrapper" aria-label="Game canvas">
+      <canvas id="gameCanvas" width="480" height="600">Your browser does not support the HTML5 canvas element. Please use a modern browser to play.</canvas>
+    </section>
 
-    <div class="hud">Score: <span id="score">0</span></div>
+    <section class="hud" role="status" aria-label="Game score">Score: <span id="score">0</span></section>
 
-    <div class="controls" aria-label="Mobile game controls">
+    <section class="controls" aria-label="Mobile game controls">
       <button id="leftBtn" class="control-button" aria-label="Move left">◀</button>
       <button id="shootBtn" class="control-button action-button" aria-label="Shoot">●</button>
       <button id="rightBtn" class="control-button" aria-label="Move right">▶</button>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <script src="game.js"></script>
 </body>
