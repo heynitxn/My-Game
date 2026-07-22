@@ -1,0 +1,6 @@
+﻿cloudflared-out.log
+cloudflared-err.log
+cloudflared.exe
+*.log
+.DS_Store
+Thumbs.db

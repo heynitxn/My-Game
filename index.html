@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Space Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-shell">
+    <h1>🚀 Space Shooter</h1>
+    <p class="instructions">Move left/right with arrow keys or tap controls. Shoot with Space or the fire button. Tap the canvas after Game Over to restart.</p>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="480" height="600"></canvas>
+    </div>
+
+    <div class="hud">Score: <span id="score">0</span></div>
+
+    <div class="controls" aria-label="Mobile game controls">
+      <button id="leftBtn" class="control-button" aria-label="Move left">◀</button>
+      <button id="shootBtn" class="control-button action-button" aria-label="Shoot">●</button>
+      <button id="rightBtn" class="control-button" aria-label="Move right">▶</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
